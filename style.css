@@ -1,0 +1,185 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #005fe6;
+}
+
+.plr{
+  padding: 30px 0;
+}
+
+.signgreater{
+  position: relative;
+}
+
+.signgreater::after{
+  content: "\f531";
+  font-family: "Font Awesome 5 Free";
+  font-weight: unset;
+  position: absolute;
+  color: inherit;
+  top: 0px;
+  right: -14px;
+}
+
+.signdown{
+  position: relative;
+}
+
+.signdown:after{
+  content:"\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: unset;
+  position: absolute;
+  color: inherit;
+  bottom: -10px;
+  right: -13px;
+}
+
+.margclear{
+  margin: 0px;
+}
+
+.my-btn{
+  color: #0069ff;
+  border: 1px solid #0069ff;
+  font-weight: 700;
+  padding: 8px 14px;
+
+}
+
+.my-btn:hover, .my-btn:hover{
+  box-shadow: none;
+  outline: 0;
+  color: white;
+  background-color: #0069ff;
+}
+
+/*** header ***/
+header .container{
+  width: 100%;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+}
+
+.logo{
+  font-size: 16px;
+  line-height: 38px;
+  color: white;
+  font-weight: bold;
+}
+
+/*** end header ***/
+
+/*** Welcome ***/
+
+.welcome{
+  padding: 167px 0 60px 0;
+  color: white;
+
+}
+
+.welcome .col-md-4{
+  background-color: white;
+}
+
+.welcome .col-md-4 h3{
+  color: black;
+}
+
+
+
+@media screen and (max-width:1050px) {
+  .hidden-nav{
+    display: none;
+  }
+
+  header{
+    background-color: #0248ff;
+    background: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+    min-height: 800px;
+    background-repeat: no-repeat;
+  }
+
+  .newbar{
+    padding: 30px 10px;
+  }
+
+}
+
+
+@media screen and (min-width:1050px){
+  .whitebars{
+    background-color: white;
+  }
+
+  header{
+    background-color: #0248ff;
+    background: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+    min-height: 800px;
+    background-repeat: no-repeat;
+  }
+
+  .newbar{
+    font-size: 12px;
+    color: #5b6987;
+    margin: 10px 8px 0 8px;
+    font-weight: bold;
+  }
+
+  .new {
+    background-color: #00d7d2;
+    color: #031b4e;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 10px;
+    margin-right: 8px;
+  }
+
+  header p {
+    display: inline-block;
+  }
+
+  header hr{
+    border-bottom: 1px solid #e5e8ed;
+    margin:0px;
+  }
+
+  .logo{
+    color: #0069FF;
+  }
+
+  .navmain {
+    font-size: 14px;
+    color: #031b4e;
+    line-height: 34px;
+  }
+
+  .navmain ul li{
+    padding-left: 16px;
+  }
+
+  .row.newbar.marg{
+    margin-top:14px;
+    margin-bottom: 14px;
+  }
+
+  section .container{
+  max-width: 1184px;
+  }
+
+}
