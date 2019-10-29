@@ -83,6 +83,10 @@ header{
   font-weight: bold;
 }
 
+.logo:hover{
+  color: white;
+}
+
 /*** end header ***/
 
 /*** Welcome ***/
@@ -101,7 +105,11 @@ header{
   color: black;
 }
 
-
+.hamburger a{
+  color:#80A4FF;
+  font-size: 20px;
+  padding: 0 20px;
+}
 
 @media screen and (max-width:1050px) {
   .hidden-nav{
@@ -163,6 +171,10 @@ header{
     color: #0069FF;
   }
 
+  .hamburger a{
+    display: none;
+  }
+
   .navmain {
     font-size: 14px;
     color: #031b4e;
@@ -178,7 +190,7 @@ header{
     margin-bottom: 14px;
   }
 
-  section .container{
+  .container{
   max-width: 1184px;
   }
 
