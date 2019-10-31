@@ -13,11 +13,13 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  background: transparent;
 }
 
 a:hover {
   text-decoration: none;
   color: #005fe6;
+  cursor: pointer;
 }
 
 .container{
@@ -35,7 +37,7 @@ a:hover {
 .signgreater::after{
   content: "\f531";
   font-family: "Font Awesome 5 Free";
-  font-weight: unset;
+  font-weight: 700;
   position: absolute;
   color: inherit;
   top: 0px;
@@ -82,6 +84,34 @@ a:hover {
 
 .hidden-nav-xs{
   display: none;
+}
+
+.prel{
+  position: relative;
+}
+
+.boxpad60{
+  padding: 60px 0;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20{
+  font-size: 20px;
+}
+
+.fwb{
+  font-weight: bold;
+}
+
+.mbot20{
+  margin-bottom: 20px;
+}
+
+h1,h2,h3,h4{
+  color: #031b4e;
 }
 
 /*** header ***/
@@ -136,8 +166,6 @@ header .container{
   padding: 60px 0;
 }
 
-
-
 .welcome .col-md-7 h1{
   font-size: 40px;
   font-weight: bold;
@@ -160,7 +188,6 @@ header .container{
 
 
 .welcome .col-md-5 h3{
-  color: black;
   font-weight: bold;
   margin-bottom: 40px;
   font-size: 28px;
@@ -238,6 +265,134 @@ header .container{
   text-decoration: underline;
 
 }
+ /*** end header welcome ****/
+
+ /*** businesses ***/
+ .backgreyish{
+ background: #f3f5f9;
+}
+
+.businesses h2{
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: bolder;
+}
+
+.container.welcome.text-center.businesses{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.prel img{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 20px;
+}
+
+.col-md-2.prel {
+  min-height: 60px;
+  margin: 30px 0;
+}
+
+.businesses a{
+  color: #0069ff;
+}
+/*** end business ***/
+
+/*** deploy and scale ***/
+.deploy{
+  background-color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.deploy p{
+  margin: 16px 0 28px 0;
+}
+
+.deploy i{
+  color: #0069ff;
+  font-size: 30px;
+}
+
+.deploy ul li{
+  line-height: 2.9;
+  border-left: 2px solid #e5e8ed;
+  font-size: 16px;
+  padding-left: 16px;
+  font-weight: bold;
+}
+
+.deploy ul li a:hover{
+  color: #031b4e;
+}
+
+.deploy ul li:first-child{
+  border-left: 2px solid #0069ff;
+}
+/*** end deploy and scale ***/
+/*** Designed ***/
+
+.designed p{
+  margin: 16px 0 28px 0;
+}
+
+.layoutdo{
+  width: 100%;
+}
+
+.arrowbox{
+  width: 100%;
+  margin:auto;
+  position: relative;
+}
+
+#arrow{
+  font-size: 48px;
+  color: #031b4e;
+  font-weight: 900;
+  height: 100%;
+  position: relative;
+  top:50%;
+}
+
+.arrowL{
+  opacity: 0.3;
+}
+
+
+.designed i{
+  color:#0069ff;
+}
+
+/*** enf designed ***/
+
+/*** built ***/
+.built.my-container{
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.built a{
+  color: #0069ff;
+}
+
+
+@media screen and (max-width:480px) {
+  .col-xxs-12{
+    width:100%;
+  }
+
+}
+
+@media screen and (min-width:481px) {
+  .col-ssm-6{
+    width: 50%;
+  }
+
+}
 
 @media screen and (min-width: 764px) {
   header{
@@ -266,12 +421,21 @@ header .container{
   .google img, .github i{
     width: 28px;
     font-size: 24px;
+  }
+
 }
 
 @media screen and (min-width: 875px){
   .welcome .col-md-7 h1{
     font-size: 46px;
   }
+}
+
+@media screen and (min-width:960px) {
+  .col-lg-3{
+    width: 25%;
+  }
+
 }
 
 @media screen and (min-width:991px){
@@ -284,6 +448,13 @@ header .container{
   }
 }
 
+@media query and screen (min-width:1000px){
+  .my-container:not(.built){
+    margin: auto;
+    width: 884px;
+  }
+
+}
 
 
 @media screen and (min-width:1050px){
@@ -346,7 +517,12 @@ header .container{
     width: 100%;
   }
 
-  .welcome{
+  .my-container:not(.built){
+    margin: auto;
+    width: 884px;
+  }
+
+  .welcome:not(.boxpad60){
     padding: 167px 0 60px 0;
   }
 
@@ -362,28 +538,6 @@ header .container{
   .newbar{
     padding: 0;
   }
-
-
-
-}
-
-/* @media screen and (max-width:1050px) {
-  .hidden-nav{
-    display: none;
-  }
-
-  header{
-    background: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
-    min-height: 800px;
-    background-repeat: no-repeat;
-  }
-
-  .newbar{
-    padding: 30px 10px;
-  }
-
-} */
-
 
 @media screen and (min-width:1200px){
   .whitebars{
