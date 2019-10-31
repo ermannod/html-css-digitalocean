@@ -114,6 +114,10 @@ h1,h2,h3,h4{
   color: #031b4e;
 }
 
+.wrapper{
+  position: relative;
+}
+
 /*** header ***/
 header .container{
   width: 100%;
@@ -343,23 +347,23 @@ header .container{
   width: 100%;
 }
 
-.arrowbox{
-  width: 100%;
-  margin:auto;
-  position: relative;
-}
-
-#arrow{
+.arrow{
   font-size: 48px;
   color: #031b4e;
   font-weight: 900;
-  height: 100%;
-  position: relative;
+  position: absolute;
   top:50%;
+  transform: translateY(-50%);
+}
+
+.arrowR{
+  right:-10%;
+
 }
 
 .arrowL{
   opacity: 0.3;
+  left:-10%;
 }
 
 
@@ -413,7 +417,25 @@ header .container{
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/*** end around the world ***/
 
+/*** development teams ***/
+
+.quotebox{
+  padding: 20px 20px 40px 20px;
+}
+
+.quotebox img{
+  width: 175px;
+}
+
+.quotebox p{
+  margin: 34px 0;
+}
+
+.circles{
+  margin-top: 30px;
+}
 
 @media screen and (max-width:480px) {
   .col-xxs-12{
