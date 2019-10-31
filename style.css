@@ -264,7 +264,7 @@ header .container{
   color: lightgrey;
 }
 
-.terms a{
+.terms, .terms a{
   color:#0069ff;
   text-decoration: underline;
 
@@ -316,7 +316,7 @@ header .container{
   margin: 16px 0 28px 0;
 }
 
-.deploy i{
+.deploy i:not(.arrow){
   color: #0069ff;
   font-size: 30px;
 }
@@ -366,7 +366,7 @@ header .container{
   left:-10%;
 }
 
-.designed i{
+.designed i:not(.arrow){
   color:#0069ff;
 }
 
@@ -395,6 +395,11 @@ header .container{
 
 .city{
   opacity: 0.6;
+}
+
+.datacenter{
+  max-width: 1200px;
+  margin: auto;
 }
 
 .speed{
@@ -434,6 +439,69 @@ header .container{
 
 .circles{
   margin-top: 30px;
+}
+
+/*** end developemtn teams ***/
+
+/*** Started ***/
+.started{
+  background: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.started button{
+  background: white;
+  color: #005fe6;
+  padding: 10px 26px;
+  margin-top: 20px;
+}
+
+.started button:hover{
+  opacity: 0.7;
+  color: inherit;
+  background: white;
+}
+
+/*** end started ***/
+
+/*** footer ***/
+
+footer{
+  background: #010E28;
+}
+
+footer ul li{
+  color: rgba(255,255,255, 0.6);
+  padding: 4px 0;
+}
+
+footer ul li a:hover{
+  color: white;
+}
+
+.footer.my-container{
+  max-width: 1200px;
+  margin:auto;
+}
+
+.rights{
+  color: rgba(255,255,255, 0.6);
+  border-top: 1px solid rgba(255,255,255, 0.6);
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  line-height: 50px;
+}
+
+.footerlog{
+  color:#0069ff;
+  font-size: 50px;
+}
+
+.social{
+  font-size: 22px;
 }
 
 @media screen and (max-width:480px) {
@@ -549,6 +617,10 @@ header .container{
     color: #0069FF;
   }
 
+  .logo:hover{
+    color: #005fe6;
+  }
+
   .hamburger a{
     display: none;
   }
@@ -572,7 +644,7 @@ header .container{
     width: 100%;
   }
 
-  .my-container:not(.built){
+  .my-container:not(.built),{
     margin: auto;
     width: 884px;
   }
